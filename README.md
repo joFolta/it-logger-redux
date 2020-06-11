@@ -9,6 +9,7 @@
 - add to package.json scripts: `"json-server": "json-server --watch db.json --port 5000",` and `"dev": "concurrently \"npm start\" \"npm run json-server\"",` <!-- setting mock database as db.json file -->
 - setup `proxy` by adding `, "proxy": "http://localhost:5000"` to `package.json` <!-- to shorten routes in code, i.e. "/" vs "http://localhost:5000/" -->
 - `npm i materialize-css` <!-- less code / lightweight compared to material-ui; quick css setup -->
+- `npm i moment react-moment` <!-- process dates -->
 
 ## Testing routes with Postman
 ![Preview](public/img/postman.png)
