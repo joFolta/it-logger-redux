@@ -1,6 +1,7 @@
 # it-logger-redux
 
 ## Run the app
+- `npm install`
 - `npm run dev`
 
 ## Dependencies/Setup
