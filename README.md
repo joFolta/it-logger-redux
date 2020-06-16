@@ -24,6 +24,12 @@
 - `src/store.js`
 - `src/reducers` contains `index.js` which points to all the reducers
 - `src/actions` contains actions and `types.js`
+To use in a component...
+- `import { connect } from "react-redux"`
+- `const mapStateToProps = (state) => ({ log: state.log })` for bringing in state
+- `import { getLogs } from "../../actions/logActions"` for bringing in actions
+- `export default connect(mapStateToProps, { getLogs })(Logs)`  connects everything in the component's export
+- now, `log` and `getLogs()` are ready to be used in this component (`Logs.js`)
 
 ## Testing routes with Postman
 ![Preview](public/img/postman.png)

@@ -14,7 +14,7 @@ import { GET_LOGS, SET_LOADING, LOGS_ERROR } from "./types";
 //   };
 // };
 
-// Refactored with error handling
+// Get logs from server (Refactored with error handling)
 export const getLogs = () => async (dispatch) => {
   // redux-thunk middleware allows async functions inside actions, so we can wait for a response, then dispatch to reducer
   try {
