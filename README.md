@@ -17,8 +17,6 @@
 ## Redux Basics
 ![Redux Logo](public/img/redux.png)
 
-<br>
-
 *Redux maintains the state of an entire application in a single immutable state tree (object), which can’t be changed directly. When something changes, a new object is created (using actions and reducers).* [Smashing Magazine](https://www.smashingmagazine.com/2016/06/an-introduction-to-redux/)
 
 - wrap entire `App.js`'s return with `<Provider store={store}></Provider>`
