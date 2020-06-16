@@ -13,8 +13,6 @@ const TechListModal = () => {
   const getTechs = async () => {
     setLoading(true);
     const res = await fetch("/techs"); // don't have to do 'http://localhost:5000/logs' b/c we added to package.json "proxy": "http://localhost:5000"
-    // TODO REMOVE LOG
-    console.log("res not formatted to json", res);
     const data = await res.json(); // format data as json
 
     setTechs(data);
