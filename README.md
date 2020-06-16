@@ -16,11 +16,13 @@
 
 ## Redux Basics
 ![Redux Logo](public/img/redux.png)
-*Redux maintains the state of an entire application in a single immutable state tree (object), which can’t be changed directly. When something changes, a new object is created (using actions and reducers).* [Smashing Magazine](https://www.smashingmagazine.com/2016/06/an-introduction-to-redux/)
+<p>*Redux maintains the state of an entire application in a single immutable state tree (object), which can’t be changed directly. When something changes, a new object is created (using actions and reducers).* [Smashing Magazine](https://www.smashingmagazine.com/2016/06/an-introduction-to-redux/)</p>
+
 - wrap entire `App.js`'s return with `<Provider store={store}></Provider>`
 - unlike React's `useContext`, we don't have to bring in different contexts separately; Redux has a central store
-- `store.js` inside `src` folder
-- `reducers` folder inside `src` folder; contains `index.js` which points to all the reducers
+- `src/store.js`
+- `src/reducers` contains `index.js` which points to all the reducers
+- `src/actions` contains actions and `types.js`
 
 ## Testing routes with Postman
 ![Preview](public/img/postman.png)
