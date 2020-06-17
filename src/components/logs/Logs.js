@@ -17,8 +17,17 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
 
   return (
     <ul className="collection with-header">
-      <li className="collection-header">
-        <h4 className="center">System Logs</h4>
+      <li className="collection-header center">
+        <h4
+          style={{
+            backgroundImage: "url(/img/redux.png)",
+            backgroundSize: "42px 42px",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "calc(50% - 110px)",
+          }}
+        >
+          System Logs
+        </h4>
       </li>
       {!loading && logs.length === 0 ? (
         <p className="center">No logs to show...</p>

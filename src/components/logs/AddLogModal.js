@@ -34,7 +34,7 @@ const AddLogModal = ({ addLog }) => {
   return (
     <div id="add-log-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
-        <h4>Enter System Log</h4>
+        <h4 style={{ fontSize: "1.8rem" }}>Enter System Log</h4>
         <div className="row">
           <div className="input-field">
             <input
@@ -67,23 +67,24 @@ const AddLogModal = ({ addLog }) => {
           </div>
         </div>
 
-        <div className="row">
-          <div className="input-field">
-            <p>
-              <label>
-                <input
-                  type="checkbox"
-                  className="filled-in"
-                  checked={attention}
-                  value={attention}
-                  onChange={(e) => setAttention(!attention)}
-                />
-                <span>Needs Attention</span>
-              </label>
-            </p>
-          </div>
+        {/* <div className="row"> */}
+        <div className="input-field">
+          <p>
+            <label>
+              <input
+                type="checkbox"
+                className="filled-in"
+                checked={attention}
+                value={attention}
+                onChange={(e) => setAttention(!attention)}
+              />
+              <span>Needs Attention</span>
+            </label>
+          </p>
         </div>
       </div>
+      {/* </div> */}
+
       <div className="modal-footer">
         <a
           href="#!"

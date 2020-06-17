@@ -2,7 +2,7 @@ import React from "react";
 
 const AddBtn = () => {
   return (
-    <div className="fixed-action-btn">
+    <div className="fixed-action-btn click-to-toggle">
       <a
         href="#add-log-modal"
         className="btn-floating btn-large blue darken-2 modal-trigger"

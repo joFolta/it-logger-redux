@@ -8,32 +8,18 @@
       "id": 1
     },
     {
-      "message": "Fixed 002",
-      "attention": false,
-      "tech": "Sara Wilson",
-      "date": "2020-06-16T18:55:22.449Z",
-      "id": 2
-    },
-    {
-      "message": "sddddddddd",
-      "attention": false,
-      "tech": "John Doe",
-      "date": "2020-06-16T18:55:45.891Z",
-      "id": 3
-    },
-    {
       "message": "Harddrive failed in workstation 002",
       "attention": true,
       "tech": "Sara Wilson",
       "date": "2020-06-16T18:56:27.491Z",
-      "id": 4
+      "id": 2
     },
     {
       "message": "1122 wireless down",
       "attention": true,
       "tech": "Sara Wilson",
       "date": "2020-06-16T18:56:56.571Z",
-      "id": 5
+      "id": 3
     }
   ],
   "techs": [

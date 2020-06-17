@@ -1,5 +1,10 @@
 # it-logger-redux
 
+![Preview](public/img/preview.png)
+![Enter Log](public/img/enterlog.png)
+![Add New Tech](public/img/newtech.png)
+![Tech List](public/img/techlist.png)
+
 ## Run the app
 - `npm install`
 - `npm run dev`
@@ -27,9 +32,9 @@
 
 To add a functionality using Redux...
 (for example, see commit "add logs" from Jun 16, 2020)
-* Add action (that will dispatch to reducer)
-* Add reducer functionality, which will control the state
-* Then, connect to component 
+1. Add action (that will dispatch to reducer)
+2. Add reducer functionality, which will control the state
+3. Then, connect to component 
 
 To use in a component...
 - `import { connect } from "react-redux"`
