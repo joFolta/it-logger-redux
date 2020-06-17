@@ -14,8 +14,8 @@
     <td><img src="public/img/techlist.png" alt="Tech List" width=230 height=440></td>
   </tr>
  </table>
- 
- *used XCode Simulator for iPhone SE 2nd gen screenshots*
+
+ *screenshots of XCode Simulator: iPhone SE 2nd Gen*
 
 ## Run the app
 - `npm install`

@@ -1,4 +1,10 @@
-import { GET_LOGS, SET_LOADING, LOGS_ERROR, ADD_LOG } from "./types";
+import {
+  GET_LOGS,
+  SET_LOADING,
+  LOGS_ERROR,
+  ADD_LOG,
+  DELETE_LOG,
+} from "./types";
 
 // export const getLogs = () => {
 //   return async (dispatch) => {
@@ -53,6 +59,28 @@ export const addLog = (log) => async (dispatch) => {
     dispatch({
       type: ADD_LOG,
       payload: data,
+    });
+  } catch (err) {
+    dispatch({
+      type: LOGS_ERROR,
+      payload: err.response.data,
+    });
+  }
+};
+
+// Delete log from server
+export const deleteLog = (id) => async (dispatch) => {
+  // redux-thunk middleware allows async functions inside actions, so we can wait for a response, then dispatch to reducer
+  try {
+    setLoading();
+
+    await fetch(`./logs/${id}`, {
+      method: "DELETE",
+    });
+
+    dispatch({
+      type: DELETE_LOG,
+      payload: id,
     });
   } catch (err) {
     dispatch({
