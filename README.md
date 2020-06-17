@@ -50,10 +50,11 @@ To add a functionality using Redux...
 
 To use in a component...
 - `import { connect } from "react-redux"`
-- `const mapStateToProps = (state) => ({ log: state.log })` for bringing in state
 - `import { getLogs } from "../../actions/logActions"` for bringing in action(s)
-- `export default connect(mapStateToProps, { getLogs })(Logs)`  connects everything in the component's export
+- `const Logs = ({ log: { logs, loading }, getLogs }) => {...}` to bring in state/action as props
+- `const mapStateToProps = (state) => ({ log: state.log })` to map state as prop
 - add `PropTypes` for state and action
+- `export default connect(mapStateToProps, { getLogs })(Logs)`  connects everything in the component's export
 - now, `log` state and `getLogs()` action are ready to be used in this component (`Logs.js`)
 
 ## Testing routes with Postman
