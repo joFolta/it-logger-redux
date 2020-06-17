@@ -116,7 +116,7 @@ const modalStyle = {
 };
 
 EditLogModal.propTypes = {
-  current: PropTypes.object.isRequired,
+  current: PropTypes.object, // value is null initially
   updateLog: PropTypes.func.isRequired,
 };
 

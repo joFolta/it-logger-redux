@@ -39,7 +39,8 @@ const Logs = ({ logs, loading, getLogs }) => {
 };
 
 Logs.propTypes = {
-  log: PropTypes.object.isRequired,
+  logs: PropTypes.array, // value is null initially
+  loading: PropTypes.bool.isRequired,
   getLogs: PropTypes.func.isRequired,
 };
 
