@@ -1,9 +1,24 @@
 # it-logger-redux
 
-![Preview](public/img/preview.png)
+<table>
+  <tr>
+    <td>Main Page</td>
+    <td>Add Log</td>
+    <td>Add Tech</td>
+    <td>Tech List</td>
+  </tr>
+  <tr>
+    <td><img src="public/img/preview.png" alt="Preview" width=230 height=440></td>
+    <td><img src="public/img/enterlog.png" alt="Enter Log" width=230 height=440></td>
+    <td><img src="public/img/newtech.png" alt="Add New Tech" width=230 height=440></td>
+    <td><img src="public/img/techlist.png" alt="Tech List" width=230 height=440></td>
+  </tr>
+ </table>
+
+<!-- ![Preview](public/img/preview.png)
 ![Enter Log](public/img/enterlog.png)
 ![Add New Tech](public/img/newtech.png)
-![Tech List](public/img/techlist.png)
+![Tech List](public/img/techlist.png) -->
 
 ## Run the app
 - `npm install`
