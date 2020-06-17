@@ -48,4 +48,4 @@ LogItem.propTypes = {
   setCurrent: PropTypes.func.isRequired,
 };
 
-export default connect(null, { deleteLog, setCurrent })(LogItem);
+export default connect(null, { deleteLog, setCurrent })(LogItem); // null b/c we are not bringing in any state here

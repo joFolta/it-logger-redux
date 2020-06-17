@@ -5,7 +5,7 @@ import Preloader from "../layout/Preloader";
 import PropTypes from "prop-types";
 import { getLogs } from "../../actions/logActions";
 
-const Logs = ({ log: { logs, loading }, getLogs }) => {
+const Logs = ({ logs, loading, getLogs }) => {
   useEffect(() => {
     getLogs();
     // eslint-disable-next-line
@@ -44,8 +44,9 @@ Logs.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  log: state.log,
-  // `log` could be called anything; it's just the arbitrary name for the prop pulled in;
+  logs: state.log.logs,
+  loading: state.log.loading,
+  // `logs` and `loading` could be called anything; it's just the arbitrary name for the prop pulled in;
   // however, `state.log` maps to `src/reducers/index.js`'s `log`
 });
 
